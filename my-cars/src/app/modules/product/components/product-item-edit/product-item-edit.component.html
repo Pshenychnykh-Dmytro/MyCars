@@ -1,1 +1,30 @@
-<p>product-item-edit works!</p>
+<form [formGroup] = "productForm" (ngSubmit)="onSubmit()" >    
+    <div class="form-group">
+        <label>
+            Title<br>
+            <input class="form-control form-control-sm" type="text" formControlName="title">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            Model<br>
+            <input class="form-control form-control-sm" type="text" formControlName="model">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            Price<br>
+            <input class="form-control form-control-sm" type="number" formControlName="price">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            Year<br>
+            <input class="form-control form-control-sm" type="number" formControlName="year">
+        </label>
+    </div>
+    <div class="form-group">
+        <input class="form-control form-control-sm" type="submit" class="btn btn-primary" value="save">
+    </div>    
+</form>
+    

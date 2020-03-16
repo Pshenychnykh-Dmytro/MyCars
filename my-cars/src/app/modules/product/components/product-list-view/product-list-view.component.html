@@ -1,5 +1,5 @@
-<div>
-    <fieldset *ngFor="let car of cars">
+<div class="card" *ngFor="let car of cars">
+    <div class="card-body">
         <div>
             Title: {{car.title}}
         </div>
@@ -12,5 +12,9 @@
         <div>
             Year: {{car.year}}
         </div>
-    </fieldset>
+    </div>
+    <div class="card-body">        
+        <a class="card-link" routerLinkActive="active" [routerLink]="['/products', car.id, 'edit']">Edit</a>
+        <a class="card-link" routerLinkActive="active" [routerLink]="['/products', car.id, 'delete']">delete</a>
+    </div>
 </div>

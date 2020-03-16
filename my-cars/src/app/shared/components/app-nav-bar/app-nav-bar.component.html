@@ -1,10 +1,11 @@
-<div>
-    <ul class="nav-bar">
-        <li>
-            <a [routerLink]="['/home']">Home</a>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">My Cars</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>
         </li>
-        <li>
-            <a [routerLink]="['/products']">Cars</a>
+        <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/products']">Cars</a>
         </li>        
     </ul>
-</div>
+</nav>

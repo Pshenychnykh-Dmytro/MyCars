@@ -1,0 +1,21 @@
+[{
+    "id": "1",
+    "title": "Opel",
+    "model": "Omega B",
+    "price": "4000",
+	"year": "1997"
+},
+{
+    "id": "2",
+    "title": "Opel",
+    "model": "Vectra A",
+    "price": "3000",
+	"year": "1994"
+},
+{
+    "id": "3",
+    "title": "Audi",
+    "model": "100",
+    "price": "4500",
+	"year": "1995"
+}]

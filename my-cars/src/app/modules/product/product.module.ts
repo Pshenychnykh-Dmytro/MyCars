@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { ProductCollectionResolver } from './resolvers/product.collection.resolver';
 import { ProductViewComponent } from './components/product-view/product-view.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ProductItemDeleteComponent } from './components/product-item-delete/product-item-delete.component';
+import { ProductItemResolver } from './resolvers/product.item.resolver';
 
 
 
@@ -21,7 +23,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ProductItemViewComponent,
     ProductItemEditComponent,
     ProductNavBarComponent,
-    ProductViewComponent
+    ProductViewComponent,    
+    ProductItemDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -37,14 +40,17 @@ import { BrowserModule } from '@angular/platform-browser';
           { path: '', redirectTo: 'table', pathMatch: 'full' },
           { path: 'table', component: ProductTableViewComponent },
           { path: 'list', component: ProductListViewComponent },
-          { path: 'add', component: ProductItemEditComponent }
+          { path: 'add', component: ProductItemEditComponent },
+          { path: ':id/edit', component: ProductItemEditComponent, resolve: { product: ProductItemResolver }},
+          { path: ':id/delete', component: ProductItemDeleteComponent }
         ]
       },
       
     ])    
   ],
   providers: [
-    ProductCollectionResolver
+    ProductCollectionResolver,
+    ProductItemResolver
   ]
 })
 export class ProductModule { }

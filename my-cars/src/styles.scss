@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.nav-bar{
+    list-style-type: none;
+}
+
+.nav-bar > li{
+    display: inline;
+    margin-left: 5px;
+}
