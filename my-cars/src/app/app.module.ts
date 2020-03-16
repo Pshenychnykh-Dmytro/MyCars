@@ -10,7 +10,7 @@ import { AppNavBarComponent } from './shared/components/app-nav-bar/app-nav-bar.
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    AppNavBarComponent
+    AppNavBarComponent    
   ],
   imports: [
     BrowserModule,
