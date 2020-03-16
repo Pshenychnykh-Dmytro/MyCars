@@ -5,13 +5,15 @@ import { ProductTableViewComponent } from './product-table-view/product-table-vi
 import { ProductItemViewComponent } from './product-item-view/product-item-view.component';
 import { ProductItemEditComponent } from './product-item-edit/product-item-edit.component';
 import { ProductNavBarComponent } from './product-nav-bar/product-nav-bar.component';
+import { CoreModule } from 'src/app/core/core.module';
 
 
 
 @NgModule({
   declarations: [ProductListViewComponent, ProductTableViewComponent, ProductItemViewComponent, ProductItemEditComponent, ProductNavBarComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    CoreModule
   ]
 })
 export class ProductModule { }
