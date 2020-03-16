@@ -1,1 +1,16 @@
-<p>product-list-view works!</p>
+<div>
+    <fieldset *ngFor="let car of cars">
+        <div>
+            Title: {{car.title}}
+        </div>
+        <div>
+            Model: {{car.model}}
+        </div>
+        <div>
+            Price: {{car.price}}$
+        </div>
+        <div>
+            Year: {{car.year}}
+        </div>
+    </fieldset>
+</div>
