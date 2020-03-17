@@ -1,23 +1,26 @@
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand">My Cars</a>
-    <ul class="nav nav-pills">
+<nav class="navbar" style="background-color: #0592e0;">
+    <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>
+            <a class="navbar-brand text-light">My Cars</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/products']">Cars</a>
+            <a class="nav-link text-light" routerLinkActive="active" [routerLink]="['/home']">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/signin']">Sign In</a>
+            <a class="nav-link text-light" routerLinkActive="active" [routerLink]="['/products']">Cars</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/signup']">Sign Up</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/profile']">Sign out</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['/signout']">Profile</a>
+       
+    </ul>
+    <ul class="nav justify-content-end">        
+        <li class="nav-item dropdown">
+            <a class="nav-link text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/icons/nav/account_white_18dp.png"></a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item"  [routerLink]="['/signin']">Sign In</a>
+                <a class="dropdown-item"  [routerLink]="['/signup']">Sign Up</a>                
+                <a class="dropdown-item"  [routerLink]="['/profile']">Profile</a>              
+                <div class="dropdown-divider"></div>              
+                <a class="dropdown-item button" [routerLink]="['/signout']">Sign out</a>
+            </div>
         </li>
     </ul>
 </nav>
